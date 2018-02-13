@@ -7,7 +7,7 @@ In this lesson you will learn:
 
 Instruction:
 
-To make a python program accept user input, you have to use the "raw_input" function. The following is an example of how to use it:
+To make a python program accept user input, you have to use the "raw_input" function. The following is an example of how to use it...
 
     name = raw_input("What is your name?")
 
