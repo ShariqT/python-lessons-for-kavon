@@ -6,6 +6,6 @@ print(fullname)
 username = input("What is your username? ")
 print(username)
 
-print(fullname[1]+fullname[4]+fullname[5]+username[1]+username[6])
+print(fullname[0]+fullname[3]+fullname[4]+username[0]+username[5])
 
 
