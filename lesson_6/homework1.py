@@ -4,6 +4,6 @@
 
 user_input = input("Pick a number more than 1: ")
 if str(user_input) > "1":
-    print(3 + 20)
+    print(int(user_input) + 20)
 
 

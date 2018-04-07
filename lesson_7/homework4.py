@@ -5,9 +5,9 @@
 mylist = mystring = "Double Trouble"
 count = 0
 count += 9
-if mylist[count] = 3:
+if mylist[count] == 8:
     print("b")
-elif mystring[count] == "T":
+if mystring[count] == "o":
     print("a")
 else:
     print("c")

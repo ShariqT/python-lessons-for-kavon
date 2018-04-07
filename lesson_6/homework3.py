@@ -3,6 +3,7 @@
 
 name = input("What is your name? ")
 favorite_number = input("What is your favorite number? ")
+fav_number = int(favorite_number)
 print("Your name is " + name)
-print("Your favorite number squared is ")
-print(favorite_number * int(favorite_number))
+print("Your favorite worfd triple is ")
+print(fav_number * fav_number)

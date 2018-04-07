@@ -7,10 +7,14 @@
 # to change any of the variables or the if/else statment that is already
 # in the program.
 number_list = input("What is the starting magic number: ")
-series_of_numbers = [ 8, 9, 2, 5, 10]
-alternate_series_of_numbers = [3, 8, 10, 1, 6]
+int_list_1 = [8, 9, 2, 5, 10]
+int_list_2 = [3, 8, 10, 1, 6]
+if number_list < str(5):
+    series_of_numbers = int_list_2
+else:
+    series_of_numbers = int_list_1
 if series_of_numbers[4] / series_of_numbers[2] > 5:
-    print("magic number is")
+    print("magic numbe r is")
     print(series_of_numbers[1] * series_of_numbers[3])
 else:
     print("magic number is")

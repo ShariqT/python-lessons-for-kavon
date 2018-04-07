@@ -3,5 +3,5 @@
 # You are only allowed to add/remove parentheses. 
 # You ARE NOT allowed to change the plus or minus signs or 
 # change the position of the numbers
-answer = 5 + 4 * 3 - 2
+answer = (5 + 4) * (3 - 2)
 print(answer)

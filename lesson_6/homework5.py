@@ -7,3 +7,7 @@ greatApple = "MacBook"
 
 if great_apple[5] == "y":
      print(great_apple + " are the best apples ever")
+elif great_apple[9] =="d":
+    print("yes")
+else:
+    print("oh hell nah!")
