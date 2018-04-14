@@ -9,3 +9,11 @@
 
 my_selection = input("How do you want to filter? ")
 float_list = [ 2.1, 3.2, 44.0, 12.1, 3.8, 8.33 ]
+float_list1 = [ 2.1, 3.2, 3.8, 8.33 ] 
+float_list2 = [44.0, 12.1 ]
+
+if my_selection == str("above"):
+    print(float_list2)
+if my_selection == str("below"):
+    print(float_list1)
+        

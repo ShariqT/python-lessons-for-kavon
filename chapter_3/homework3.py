@@ -3,7 +3,8 @@
 
 counter = 5
 while counter <= 50:
-    counter = counter + 1
+    print(counter)
+    counter+=5
     if counter / 5 == 0:
         print(counter)
     

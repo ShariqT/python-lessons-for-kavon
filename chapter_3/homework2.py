@@ -11,3 +11,31 @@
 
 user_password = input("What is your password? ")
 counter = 0
+  
+while counter <= len(user_password):
+    user_password[counter]
+    if user_password[counter] == "!":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "@":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "#":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "$":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "%":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "^":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "&":
+        print("I found a special character!")
+        break
+    if user_password[counter] == "*":
+        print("I found a special character!")
+        break
+    counter+=1

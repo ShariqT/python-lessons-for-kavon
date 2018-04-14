@@ -7,6 +7,10 @@
 # change the user_number or the counter variables.
 
 
-user_number = input("High do you want to count? ")
+user_number = input("How high do you want to count? ")
 
 counter = 0
+
+while counter <= int(user_number):
+    print(counter)
+    counter+=1

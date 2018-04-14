@@ -7,12 +7,11 @@
 
 users = [
     ('shariq', 'testP@ss', 'Cavs'),
-    ('kavon', 'passW0rd', 'Knicks'),
+    ('kavon', 'passW0rd', 'Knick'),
     ('jason', 'p@ssword', 'Lakers')
-]
-
+    ]
 username = input("Enter your username: ")
 for user in users:
-    if user[2] == username:
+    if users[2] == username:
         selected_user = user
 print(selected_user[0] + " favorite team is " + selected_user[1])
