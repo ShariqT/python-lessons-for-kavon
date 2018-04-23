@@ -13,7 +13,18 @@ float_list1 = [ 2.1, 3.2, 3.8, 8.33 ]
 float_list2 = [44.0, 12.1 ]
 
 if my_selection == str("above"):
-    print(float_list2)
+    #print(float_list2)
+    counter  = 0
+    while counter < len(float_list):
+        if float_list[counter] > 10.0:
+            print(float_list[counter])
+        counter +=1
+    
+
 if my_selection == str("below"):
-    print(float_list1)
-        
+    #print(float_list1)
+    counter  = 0
+    while counter < len(float_list):
+        if float_list[counter] < 10.0:
+            print(float_list[counter])
+        counter +=1

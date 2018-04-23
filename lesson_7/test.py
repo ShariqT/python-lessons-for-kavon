@@ -1,1 +1,2 @@
-input("what is your password")
+name"what is your username?")
+    print

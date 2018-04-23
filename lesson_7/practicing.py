@@ -7,5 +7,5 @@ print(name + "will be 100 years old in the year in " + year)
 
 
 child = int(input("How old is your child"))
-print("my child is " + str(child)) * int(child)
+print("my child is " + str(child) )
 

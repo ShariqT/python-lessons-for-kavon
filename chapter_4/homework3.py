@@ -18,3 +18,10 @@ passwords = [
     'yELacaK3 Rul3z',
     'OpaRhSideN155'
 ]
+
+for password in passwords: 
+    if len(password) > 8 and len(password) <= 15:
+        if password[0].isupper() and password[3].isupper() and password[5].isupper():
+            if password[-2:].isdigit():
+                print(password + " is strong!")
+                

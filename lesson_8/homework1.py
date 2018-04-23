@@ -28,5 +28,6 @@ if password[0] == "!" and len(password)>8 :
     print("Strong password!")
 else:
     print ("weak password")
+
     
     
