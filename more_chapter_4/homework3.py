@@ -17,9 +17,9 @@ users = [
 tries=0 
 
 #added line
-success = False
+access_granted = False
 
-while tries<3 and success == False:
+while tries<3 and access_granted == False:
     username = input("enter your username: ")
     password = input("enter your password: ")
 
@@ -27,7 +27,7 @@ while tries<3 and success == False:
         if user[1] == password:
             print("Access Granted!")
             print("Welcome, " + user[0])
-            success = True
+            access_granted = True
             break
         else:
             print("Access Denied, Try again!")
