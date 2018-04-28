@@ -14,13 +14,20 @@ users = [
     ('jason', 'p@ssword', 'Lakers', 'NoAdmin')
 ]
 
+tries=0 
 
-username = input("enter your username: ")
-password = input("enter your password: ")
+while tries<3:
+    username = input("enter your username: ")
+    password = input("enter your password: ")
 
-for user in users:
-    if user[1] == password:
-        print("Access Granted!")
-        print("Welcome, " + user[0])
-    else:
-        print("Access Denied!")
+    for user in users:
+        if user[1] == password:
+            print("Access Granted!")
+            print("Welcome, " + user[0])
+            break
+        else:
+            print("Access Denied, Try again!")
+            tries+=1
+            break
+    
+        

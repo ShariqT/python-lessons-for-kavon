@@ -3,3 +3,9 @@
 # like '4', '8', '12', etc...
 # hint: you have to use range() to get this correct
  
+
+
+for k in range(4, 41, 4):
+    print(k)
+    
+    

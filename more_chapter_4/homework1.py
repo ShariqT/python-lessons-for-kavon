@@ -6,3 +6,8 @@
 # everything else though
 
 my_list = ['c', 'h', 'd', 'p', 'b' ]
+add_on = "at"
+letter = my_list
+
+for letter in my_list:
+    print (letter + add_on)
