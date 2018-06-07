@@ -1,4 +1,4 @@
-def enter_passwords():
+def enter_info():
     user_name = input("What's your user name? ")
     password = input("What's your password? ")
     website = input("What's your website? " )

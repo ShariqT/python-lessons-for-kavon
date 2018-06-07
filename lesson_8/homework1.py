@@ -15,16 +15,16 @@
 # print "weak password"
 
 root_password = "boogeyman123"
-name = (int(1))
+name = "kavon"
 password = input("What is your password?")
-print("your user name is:"+ str(name))
+print("your user name is:"+ (name))
 print("your password is:", password)
 
 if root_password == password :
-    print("access granted")
+    print("stop being a copy cat")
 if root_password != password :
-    print("access denied")
-if password[0] == "!" and len(password)>8 :
+    print("access granted, you are creative")
+if password[0] == "F" or password[0] == "U" and len(password)==8:
     print("Strong password!")
 else:
     print ("weak password")

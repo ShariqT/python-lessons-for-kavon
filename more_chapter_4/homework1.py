@@ -5,9 +5,10 @@
 # Note: you cannot change the variable my_list. You can do
 # everything else though
 
-my_list = ['c', 'h', 'd', 'p', 'b' ]
+my_list = ['c', 'h', 'd', 'p', 'b', 'e' ]
+food = ['cookeies', 'piazza', 'coke', 'candy', 'fruit']
 add_on = "at"
 letter = my_list
 
-for letter in my_list:
-    print (letter + add_on)
+for letter in range(0, len(my_list)):
+    print (my_list[letter] + food[letter])  

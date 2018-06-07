@@ -3,3 +3,4 @@
 # 'new_entry' parameter into the 'db' variable and then return the db.
 
 # This function will basically save our entries in the password variable
+#put ths function inside the database.pyfile.

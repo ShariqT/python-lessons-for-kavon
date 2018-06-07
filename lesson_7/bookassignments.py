@@ -63,13 +63,44 @@
 
 
 #Chaper4
+#Q1.counting for user. User enters beginning number, end number and count by number...
+
+# import random
+# start_number = input("What is your starting number? ")
+# end_number = input("what is your ending number? ")
+# count_number = input("how much should I count by? ")
+
+# for k in range(int(start_number),int(end_number),int(count_number)):
+#     print(k)
+
+#Q2.printing message backwards    
+# message = input("What's your message? ")
+# print (message[::-1])
+#Ask Shariq why I had to print 2 colons
+
+#Q3 Jumble Game
 
 import random
-start_number = input("What is your starting number? ")
-end_number = input("what is your ending number? ")
-count_number = input("how much should I count by? ")
 
-for k in range(int(start_number),int(end_number),int(count_number)):
-    print(k)
+WORDS = ("sugar", "honey", "ice", "tea", "dont", "play", "with", "me")
+word = random.choice(WORDS)
+correct = word
+jumble = ""
+
+guess = input("what's your guess? ")
+
+while word:
+    position = random.randrange(len(word))
+    jumble += word[position]
+    word = word[:position] + word[(position + 1):]
+
+
+while guess != correct and guess != "":
+    print("sorry, that's incorrect, try again")
+    guess = input("what's your guess? ")
+if guess == correct:
+    print("YOU GOT IT! YOU FUCKING ROCK!")
+    print("thanks for playing")
     
- 
+
+

@@ -1,26 +1,35 @@
-from password_manager.database import passwords
-from password_manager.input import enter_passwords
+from password_manager.database import create_db_entry
+from password_manager.input import enter_info
 import os
-def add_entry():
+
+def add_entry(passwords):
     os.system("clear")
     keep_going = True
-    database_entry = enter_passwords()
+    database_entry = enter_info()
+    
+    passwords = create_db_entry(passwords, database_entry)
     while keep_going == True:
         answer = input("Would you like to add another entry? Enter yes or no " )
 
         if answer == "yes" :
-            call = enter_passwords()
-            print(call)
+            new_record = enter_info()
+            passwords = create_db_entry(passwords, new_record)
+            
+            print(new_record)
         else:
             keep_going = False
-            main_menu()
+    
+    return passwords
 
-def print_entry():
-    os.system("clear")
-    print(passwords)
-    main_menu()
+def print_entry(paaswords):
+        for i in passwords:
+            print(i)
+        os.system("clear")
+        print(passwords)
+        main_menu(passwords)
 
-def main_menu():
+
+def main_menu(passwords):
 
     print("what would you like to do?" )
     print("1)add entry")
@@ -29,9 +38,12 @@ def main_menu():
     user_choice = input("enter choice: ")
     
     if user_choice == str(1):
-        add_entry()
+        passwords = add_entry(passwords)
+        main_menu(passwords)
     if user_choice == str(2):
-        print_entry()
+        print_entry(passwords)
     if user_choice == str(3):
         print("I guess I'll see you next lifetime...")
-main_menu()
+
+passwords = []
+main_menu(passwords)
